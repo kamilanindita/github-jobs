@@ -14,7 +14,7 @@ class JobService {
   }
 
   getFilter(query) {
-    return axios.get(`${API_URL}/filter?${query}`, );
+    return axios.get(`${API_URL}/filter?${query}`, { headers: authHeader() });
   }
 }
 
